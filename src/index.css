@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: "Roboto Flex", sans-serif;
+}
+
+body {
+    background-color: #24144C;
+}
+
+@layer utilities {
+    .animation-delay-2000 {
+        animation-delay: 2s;
+    }
+    .animation-delay-4000 {
+        animation-delay: 4s;
+    }
+    .animation-delay-6000 {
+        animation-delay: 6s;
+    }
+    .animation-delay-8000 {
+        animation-delay: 8s;
+    }
+}

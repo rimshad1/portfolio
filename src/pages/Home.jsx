@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   useEffect(() => {
@@ -31,12 +32,22 @@ const Home = () => {
         <p className='text-4xl text-white font-bold '>Web Developer</p>
       </div>
       <div className='absolute flex justify-center mt-60 z-30 gap-10 '>
-        <button className='bg-white py-2 px-5 bg-opacity-60 text-black text-lg font-bold shadow-[0_0_20px_0px_#fff] outline-none border-none rounded-full'>
-          Hire Me
-        </button>
-        <button className='bg-white py-2 px-5 bg-opacity-60 text-black text-lg font-bold shadow-[0_0_20px_0px_#fff] outline-none border-none rounded-full'>
-          Download cv
-        </button>
+        <Link
+          to='https://www.fiverr.com/rima_011?up_rollout=true'
+          target='_blank'
+        >
+          <button className='bg-white py-2 px-5 bg-opacity-60 text-black text-lg font-bold shadow-[0_0_20px_0px_#fff] outline-none border-none rounded-full'>
+            Hire Me
+          </button>
+        </Link>
+        <Link
+          to='https://drive.google.com/file/d/1CWXRV9KbJOjxr1HpcZeqtEy3B5uiK1Bn/view'
+          target='_blank'
+        >
+          <button className='bg-white py-2 px-5 bg-opacity-60 text-black text-lg font-bold shadow-[0_0_20px_0px_#fff] outline-none border-none rounded-full'>
+            Download cv
+          </button>
+        </Link>
       </div>
     </div>
   );
